@@ -1,1 +1,1 @@
-# ListaDeExercicios3
+# ListaDeExercicios3, resolução dos exercicios propostos.
