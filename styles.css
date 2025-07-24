@@ -1,0 +1,120 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+  background-color: #1e90ff;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid #0d5ea8;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid #87cefa;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #1e90ff;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border: 3px solid #0d5ea8;
+  text-align: center;
+}
+/* Seleciona todos os h2 */
+h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+/* Classe destaque */
+.destaque {
+  font-style: italic;
+  background-color: #f9f9c5; /* tom leve de amarelo claro */
+}
+
+/* ID importante */
+#importante {
+  border-top: 5px solid red;
+  padding-top: 10px;
+}
+
+/* MENU HAMBURGUER */
+
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #1e90ff;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  position: relative;
+}
+
+/* Estilo da lista de navegação */
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilo do botão hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #1e90ff;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
